@@ -1,0 +1,61 @@
+.heading-1, 
+.heading-2,
+.heading-3,
+.heading-4 {
+  line-height: 1.2em;
+}
+.heading-1 {
+  font-size: $font-size-base * 2;
+  @media only screen and (min-width: $breakpoint-md) {
+    font-size: $font-size-base * 3;
+  }
+}
+
+.heading-2 {
+  font-size: $font-size-base * 1.8;
+  @media only screen and (min-width: $breakpoint-md) {
+    font-size: $font-size-base * 2.44;
+  }
+}
+
+.heading-3 {
+  font-size: $font-size-base * 1.6;
+  @media only screen and (min-width: $breakpoint-md) {
+    font-size: $font-size-base * 1.93;
+  }
+}
+
+.heading-4 {
+  font-size: $font-size-base * 1.4;
+  @media only screen and (min-width: $breakpoint-md) {
+    font-size: $font-size-base * 1.56;
+  }
+}
+
+.text-small{
+  font-size: 13px;
+  line-height: 20px;
+  }
+.text-small-bold{
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  }  
+.text-normal{
+  font-size: 16px;
+}
+.text-normal-bold{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: $line-height-base;
+}
+
+.text-large {
+  font-size: 1.2em;
+  line-height: $line-height-large;
+}
+.text-large-bold{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: $line-height-large;
+}

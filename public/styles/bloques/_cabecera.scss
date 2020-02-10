@@ -1,0 +1,52 @@
+$jumbo-height: auto;
+$jumbo-height-md: 500px;
+
+.header{
+  margin: 2em 0;
+  
+}
+.maletas{
+  background-image: url("../imagenes/jumbo@2x.jpg");
+  background-size: cover;
+  background-position: right;
+
+  &__mascara{
+    background-color: $transparency2;
+    color: $transparency2-h;
+    padding: 2em;
+      @media screen and (min-width: $breakpoint-md){
+      height: $jumbo-height-md;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      }
+  }
+  &__titulo{
+    font-size: 2em;
+    width: 90%;
+    @media screen and (min-width: $breakpoint-md){
+      font-size: 3em;
+      width: 80%;
+    }
+  }
+  &__apps{
+    margin-top: 2em;
+  
+
+  }
+  &__apps__boton{
+    display: inline-block;
+    padding-right: .5em;
+      @media screen and (min-width: $breakpoint-md){
+      padding-right: 1.5em;
+    }
+  }
+  &__apps__click{
+    width: 80%;
+    @media screen and (min-width: $breakpoint-md){
+      width: 100%;
+    }    
+  }
+
+}

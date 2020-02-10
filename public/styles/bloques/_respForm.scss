@@ -1,0 +1,14 @@
+.ClaseContenMensaje{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  background-color: $primary3;
+  border-radius: 10px;
+}
+.claseMensaje{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.8em;
+}

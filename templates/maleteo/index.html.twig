@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maleteo</title>
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/squirrelly@7.5.0/dist/squirrelly.min.js"></script>
+  <script src="script/squirrelly.js"></script>
+
+</head>
+<body>
+  <!--Empieza el Bolque Cabecera-->
+  <div class="wrapper">
+    <div class="container-fluid">
+      <header class="header">
+        <img src="imagenes/logo.svg" alt="Maleteo" class="header__logo">
+      </header>
+    </div>
+  </div>
+  <div class="maletas">
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="maletas__mascara col-md-6">
+            <h1 class="maletas__titulo">Gana dinero guardando equipaje a viajeros como tu</h1>
+            <ul class="maletas__apps">
+              <li class="maletas__apps__boton">
+                <a href="">
+                  <img src="imagenes/app-store.svg" alt="app-store" class="maletas__apps__click">
+                </a>
+              </li>
+              <li class="maletas__apps__boton">
+                <a href="">
+                  <img src="imagenes/google-play.svg" alt="google-play" class="maletas__apps__click">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Termina el Bloque Cabecera-->
+
+  <!--Empieza el Bloque Como Funciona-->
+  <div class="wrapper">
+    <div class="como-funciona text-normal">
+      <h2 class="como-funciona__titulo heading-2">¿Cómo funciona?</h2>
+      <ul class="row">
+        <li class="como-funciona__item col-xs-12 col-md-4">
+          <p class="ball">1</p>
+          <p class="como-funciona__parrafo1 heading-3">Date de alta</p>
+          <p class="como-funciona__parrafo2 heading-4">Una olla de algo más vaca que carnero, salpicón las más
+            noches,duelos y quebrantos los sábados.</p>
+        </li>
+        <li class="como-funciona__item col-xs-12 col-md-4">
+          <p class="ball">2</p>
+          <p class="como-funciona__parrafo1 heading-3">Publica tus espacios, horarios, tarifas...</p>
+          <p class="como-funciona__parrafo2 heading-4">En un lugar de la mancha, de cuyo nombre no quiero acordarme, no
+            hace mucho tiempo.</p>
+        </li>
+        <li class="como-funciona__item col-xs-12 col-md-4">
+          <p class="ball">3</p>
+          <p class="como-funciona__parrafo1 heading-3">Recibe viajeros y gana dinero.</p>
+          <p class="como-funciona__parrafo2 heading-4">No hace mucho tiempo que vivia un hidalgo de los lanza en astillero
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <!--Termina el Bloque Como Funciona-->
+
+  <!--Empieza el Bloque Formulario-->
+  <div class="wrapper">
+    <div class="formulario text-normal">
+      <div class="row">
+        <div class="formulario__img col-md-5">
+          <img src="imagenes/iPhoneX.png" alt="iPhone">
+        </div>
+
+          <div  class="col-md-5 col-md-offset-1 col-xs-12" id="formularioPadre"> 
+
+           <div class="formulario__form">  
+
+              <p class="formulario__titulo heading-3">Solicita una demo</p>
+              {{ form_start(DemoForm) }}
+              {{ form_errors(DemoForm) }}
+
+                <div>
+                    {{ form_label(DemoForm.nombre) }}
+                    {{ form_errors(DemoForm.nombre) }}
+                    {{ form_widget(DemoForm.nombre) }}
+                </div>
+
+                <div>
+                    {{ form_label(DemoForm.email) }}
+                    {{ form_errors(DemoForm.email) }}
+                    {{ form_widget(DemoForm.email) }}
+                </div>
+                <div>
+                    {{ form_label(DemoForm.horario) }}
+                    {{ form_errors(DemoForm.horario) }}
+                    {{ form_widget(DemoForm.horario) }}
+                </div> 
+								
+								           
+              {{ form_end(DemoForm) }}
+          </div><!--.formulario__form-->
+        </div><!--#formularioPadre-->
+      </div><!--.row-->
+    </div><!--.formulario-->
+  </div><!--wrapper-->
+  <!--Termina el Bloque Formulario-->
+
+  <!--Empieza el Bloque Opiniones-->
+  <div class="wrapper">
+   <div class="container-fluid">
+      <div class="opiniones text-normal">
+        <h2 class="opiniones__titulo heading-2">
+          Opiniones de otros guardianes
+        </h2>
+        <div class="opiniones__lista">
+          <ul class="row">
+            <li class="col-md-4">
+              <div class="opiniones__lista-bolque">
+                <div>
+                  <div class="arrow-before"></div>
+                  <div class="arrow-after"></div>
+                  <blockquote class="opiniones__comentario bocadillo text-large">
+                    Tras el enorme éxito internacional de su primera colaboración, “Bailar”, que ganó un galardón en los Premios
+                  </blockquote>
+                </div>
+                <div class="opiniones__contenedor">
+                  <div class="opiniones__contenedor-img">
+                    <img src="imagenes/urkel.jpg" alt="urkel usuario">
+                  </div>
+                  <div class="opiniones__contenedor-usuarios">
+                    <p class="opiniones__usuario text-large">Sergio Garnacho</p>
+                    <p class="opiniones__usuario-direcc text-normal-bold">Vicálvaro, <span>Madrid</span></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4">
+              <div class="opiniones">
+                <div>
+                  <div class="arrow-before"></div>
+                  <div class="arrow-after"></div>
+                  <blockquote class="opiniones__comentario bocadillo text-large">
+                    Tras el enorme éxito internacional de su primera colaboración, “Bailar”, que ganó un galardón en los Premios 
+                  </blockquote>
+                </div>
+                <div class="opiniones__contenedor">
+                  <div class="opiniones__contenedor-img">
+                    <img src="imagenes/alf.jpg" alt="alf usuario">
+                  </div>
+                  <div class="opiniones__contenedor-usuarios">
+                    <p class="opiniones__usuario text-large">Sergio Garnacho</p>
+                    <p class="opiniones__usuario-direcc text-normal-bold">Coslada, <span>Madrid</span></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4">
+              <div class="opiniones">
+                <div>
+                  <div class="arrow-before"></div>
+                  <div class="arrow-after"></div>
+                  <blockquote class="opiniones__comentario bocadillo text-large">
+                    Tras el enorme éxito internacional de su primera colaboración, “Bailar”, que ganó un galardón en los Premios
+                  </blockquote>
+                </div>
+                <div class="opiniones__contenedor">
+                  <div class="opiniones__contenedor-img">
+                    <img src="imagenes/espinete.jpeg" alt="espinete usuario">
+                  </div>
+                  <div class="opiniones__contenedor-usuarios">
+                    <p class="opiniones__usuario text-large">Espinete Espinosa</p>
+                    <p class="opiniones__usuario-direcc text-normal-bold">Barrio Sésamo, <span>Madrid</span></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!--container-fluid-->
+  </div><!--wrapper-->
+  <!--Termina el Bloque Opiniones-->
+
+  <!--Empieza el Bloque Guardianes-->
+  <h2 class=" tituloGuardianes heading-2">Guardianes cerca tuyo</h2>
+    <div class="guardianes col-sm-12 col-md-12 col-xs-12">
+      <div class="guardianes__lista col-sm-5 col-md-5 col-xs-4">
+        <ul class="guardianes__lista__listado">
+          <div id="listado">
+            
+          </div>
+        </ul>
+      </div>
+      <div class="guardianes__mapa col-sm-7 col-md-7 col-xs-8" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24285.28482530835!2d-3.7176314605863463!3d40.46064828152152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422906e34771eb%3A0x9887e1ccf09cb673!2zVGV0dcOhbiwgTWFkcmlk!5e0!3m2!1ses!2ses!4v1576669466666!5m2!1ses!2ses" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  <!--Termina el Bloque Guardianes-->
+
+  <!--Empieza el Bloque Footer-->
+  <footer class="footer">     
+      <div class="container__footer">
+        <img src="imagenes/logo-blanco.svg" alt="Maleteo" class="footer__logo">
+        <p class="footer__claim">Hecho con ❤️ en Madrid</p>
+      </div> 
+    </footer>
+</body>
+</html>
